@@ -110,6 +110,36 @@ $imago->grayscale(35);
 ```
 > **Note:** Accepted range is between `-100` to `100`.
 
+Sepia:
+```php
+$imago->sepia();
+```
+
+Edge highlight:
+```php
+$imago->edge();
+```
+
+Emboss:
+```php
+$imago->emboss();
+```
+
+Sketch:
+```php
+$imago->sketch();
+```
+
+Invert color:
+```php
+$imago->invert();
+```
+
+Pixelate:
+```php
+$imago->pixelate();
+```
+
 
 ### Preview & Exporting
 
