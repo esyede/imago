@@ -3,13 +3,17 @@
 Simple, standalone GD image manipulation library written in PHP.
 
 
-## Requirements
+### Requirements
 
   - PHP 5.4+
   - PHP GD extension
 
 
-<a id="loading-image"></a>
+### Installation
+
+Download the file from [release page](https://github.com/esyede/imago/releases) and drop to your project. That's it.
+
+
 ### Loading image
 
 ```php
@@ -142,3 +146,8 @@ return Imago::identicon('john.doe@gmail.com', 64, true);
 // Export identicon into a file
 file_put_contents('user.jpg', $identicon, LOCK_EX);
 ```
+
+That's pretty much it. Thank you for stopping by!
+
+### License
+This library is licensed under the MIT License
