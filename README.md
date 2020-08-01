@@ -150,4 +150,4 @@ file_put_contents('user.jpg', $identicon, LOCK_EX);
 That's pretty much it. Thank you for stopping by!
 
 ### License
-This library is licensed under the MIT License
+This library is licensed under the [MIT License](http://opensource.org/licenses/MIT)
