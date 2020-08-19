@@ -469,9 +469,15 @@ class Imago
         $this->maintain();
         $this->path = $this->path($path);
 
-        if (is_file($path)) {
+        if (is_file($this->path)) {
             if (! $overwrite) {
                 throw new \Exception('Destination file already exists: '.$this->path);
+            }
+        }
+
+        if (false === strpos($this->path, '.')) {
+            if (! $overwrite) {
+                throw new \Exception('Unsupported file: '.$this->path);
             }
         }
 
