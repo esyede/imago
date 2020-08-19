@@ -475,7 +475,8 @@ class Imago
             }
         }
 
-        $extension = File::extension($this->path);
+        $extension = explode('.', $this->path);
+        $extension = strtolower(end($extension));
 
         switch ($extension) {
             case 'jpg':
