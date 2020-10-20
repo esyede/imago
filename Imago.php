@@ -5,6 +5,11 @@ namespace Esyede;
 class Imago
 {
     /**
+     * Default image quality.
+     */
+    const DEFAULT_QUALITY = 75;
+
+    /**
      * Stores single instace object.
      *
      * @var object
@@ -59,7 +64,7 @@ class Imago
      * @param string $path
      * @param int    $quality
      */
-    public function __construct($path, $quality = 75)
+    public function __construct($path, $quality = self::DEFAULT_QUALITY)
     {
         $this->reset();
 
@@ -73,7 +78,7 @@ class Imago
 
         $this->width = 0;
         $this->height = 0;
-        $this->quality = $quality;
+        $this->quality = (int) $quality;
 
         $this->load($path);
     }
@@ -573,7 +578,7 @@ class Imago
         $this->path = null;
         $this->width = 0;
         $this->height = 0;
-        $this->quality = null;
+        $this->quality = self::DEFAULT_QUALITY;
         $this->exif = [];
     }
 
